@@ -1,0 +1,6 @@
+{
+	"appId": "com.commerce9.dboyapp",
+	"appName": "dboy-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
