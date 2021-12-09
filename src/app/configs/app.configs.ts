@@ -11,8 +11,9 @@ export const appConfigs = {
     appMainThemeColor: '#f46f25',
     appMainIcon: 'assets/images/c9_favicon.png',
     appSplashIcon: 'assets/images/c9_logo.svg',
-    geocodingUrl: 'https://maps.googleapis.com/maps/api/geocode/json?',
-    mapApiUrl: 'https://maps.googleapis.com/maps/api/js?',
+    geocodingUrl: 'https://maps.googleapis.com/maps/api/geocode/json',
+    directionUrl: 'https://maps.googleapis.com/maps/api/directions/json',
+    mapApiUrl: 'https://maps.googleapis.com/maps/api/js',
     locationCheckInterval: 5000,
     api: {
         development: {
@@ -22,7 +23,7 @@ export const appConfigs = {
             username: 'mobile-1',
             password: '2sQG7reKF*cAAmfD$yccPM6',
             mockApi: false,
-            googleApiKey: 'AIzaSyApRpIGdrIZRRsaPLHdp_Dlq5hDMyZ4PzA',
+            googleApiKey: 'AIzaSyBbaF8AoNDwlkUkAzukUvfD7lfXr3U7kfc',
             authRetryLoop: 12,
         },
         testing: {
@@ -31,7 +32,7 @@ export const appConfigs = {
             version: '1',
             username: 'mobile-1',
             password: '2sQG7reKF*cAAmfD$yccPM6',
-            googleApiKey: 'AIzaSyApRpIGdrIZRRsaPLHdp_Dlq5hDMyZ4PzA',
+            googleApiKey: 'AIzaSyBbaF8AoNDwlkUkAzukUvfD7lfXr3U7kfc',
             authRetryLoop: 12,
         },
         staging: {
@@ -40,7 +41,7 @@ export const appConfigs = {
             version: '1',
             username: 'mobile-1',
             password: '2sQG7reKF*cAAmfD$yccPM6',
-            googleApiKey: 'AIzaSyApRpIGdrIZRRsaPLHdp_Dlq5hDMyZ4PzA',
+            googleApiKey: 'AIzaSyBbaF8AoNDwlkUkAzukUvfD7lfXr3U7kfc',
             authRetryLoop: 12,
         },
         production: {
@@ -49,7 +50,7 @@ export const appConfigs = {
             version: '1',
             username: 'mobile-1',
             password: '2sQG7reKF*cAAmfD$yccPM6',
-            googleApiKey: 'AIzaSyApRpIGdrIZRRsaPLHdp_Dlq5hDMyZ4PzA',
+            googleApiKey: 'AIzaSyBbaF8AoNDwlkUkAzukUvfD7lfXr3U7kfc',
             authRetryLoop: 12,
         },
     },
