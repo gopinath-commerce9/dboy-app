@@ -214,6 +214,52 @@ export class OrderDeliveryPage implements OnInit {
     return orderDate;
   }
 
+  getOrderPaymentStatus(order: any = null) {
+    let paymentStatus = '';
+    if ((order !== undefined) && (order !== null)) {
+      if (order.hasOwnProperty('paymentStatus') && (order.paymentStatus !== null) && (order.paymentStatus !== '')) {
+        paymentStatus = order.paymentStatus;
+      }
+    }
+    return paymentStatus;
+  }
+
+  getOrderPaymentMethod(order: any = null) {
+    let paymentMethod = '';
+    if ((order !== undefined) && (order !== null)) {
+      if (order.hasOwnProperty('paymentMethod') && (order.paymentMethod !== null) && (order.paymentMethod !== '')) {
+        paymentMethod = order.paymentMethod;
+      }
+    }
+    return paymentMethod;
+  }
+
+  getOrderPaymentTotal(order: any = null) {
+    let paymentTotal = '';
+    if ((order !== undefined) && (order !== null)) {
+      if (order.hasOwnProperty('orderTotal') && (order.orderTotal !== null) && (order.orderTotal !== '')) {
+        paymentTotal = order.orderTotal;
+        if (order.hasOwnProperty('orderCurrency') && (order.orderCurrency !== null) && (order.orderCurrency !== '')) {
+          paymentTotal += ' ' + order.orderCurrency;
+        }
+      }
+    }
+    return paymentTotal;
+  }
+
+  getPrderPaymentDue(order: any = null) {
+    let paymentDue = '';
+    if ((order !== undefined) && (order !== null)) {
+      if (order.hasOwnProperty('orderDue') && (order.orderDue !== null) && (order.orderDue !== '')) {
+        paymentDue = order.orderDue;
+        if (order.hasOwnProperty('orderCurrency') && (order.orderCurrency !== null) && (order.orderCurrency !== '')) {
+          paymentDue += ' ' + order.orderCurrency;
+        }
+      }
+    }
+    return paymentDue;
+  }
+
   getCustomerName(order = null) {
     let customerFullName = '';
     if ((order !== undefined) && (order !== null)) {

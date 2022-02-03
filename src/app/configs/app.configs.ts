@@ -18,7 +18,8 @@ export const appConfigs = {
     api: {
         development: {
             /* baseUrl: 'http://192.168.43.229/fms-new/public/', */
-            baseUrl: 'http://192.168.1.4/fms-new/public/',
+            /* baseUrl: 'http://192.168.1.7/fms-new/public/', */
+            baseUrl: 'http://172.29.13.203:81/fms-new/public/',
             version: '1',
             username: 'mobile-1',
             password: '2sQG7reKF*cAAmfD$yccPM6',
